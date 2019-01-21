@@ -1,0 +1,5 @@
+2019-01-18 16:49:20,486 WARN  [DefaultSoapUICore] Missing folder [C:\Users\ZPing\ext] for external libraries
+2019-01-18 16:49:20,791 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\ZPing\soapui-settings.xml]
+2019-01-18 16:49:21,617 INFO  [WorkspaceImpl] Loading workspace from [C:\Users\ZPing\intellij-soapui-workspace.xml]
+2019-01-18 16:53:06,379 INFO  [WorkspaceImpl] Saved workspace to [C:\Users\ZPing\intellij-soapui-workspace.xml]
+2019-01-18 16:53:06,382 INFO  [DefaultSoapUICore] Settings saved to [C:\Users\ZPing\soapui-settings.xml]

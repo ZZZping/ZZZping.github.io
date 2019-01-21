@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <meta charset="utf-8"><!--使用utf-8编码-->
+        <title>Hello</title>
+        <style type="text/css">
+            .nav li{
+            list-style-type:none;
+            display: block;
+            width: 300px;
+            height: 100px;
+            float: left;
+            background-color: rgba(18, 209, 18, 0.658);
+            }
+            .nav a:link{
+                text-decoration: none;
+                display: block;
+                height: 100px;
+                width: 300px;
+                line-height: 100px;
+                text-align: center;
+                color: palevioletred;
+            }
+            .nav a:visited{
+                color: palevioletred;
+            }
+            .nav a:hover{
+                text-decoration: none;
+                display: block;
+                height: 100px;
+                width: 300px;
+                line-height: 100px;
+                text-align: center;
+                color: red;
+                background-color: brown;
+            }
+        </style>
+    </head>
+    <body style="background-color:yellow;">
+        <ul class="nav">
+            <li><a href="https://baike.baidu.com/item/java/85979">Java</a></li>
+            <li><a href="https://baike.baidu.com/item/html/97049">html</a></li>
+            <li><a href="https://baike.baidu.com/item/CSS/5457">css</a></li>
+            <li><a href="https://baike.baidu.com/item/javascript">Javascript</a></li>
+        </ul><br>
+        <br>
+        <br>
+        <br>
+        <h1 style="background-color:palegreen">第一个标题</h1><!--H1是一级标题-->
+        <p>
+            这是第一个标题下面的段落<br>
+
+            najdasdihnrq3nrdiuashdnasndws<br>
+            <a href="http://www.zhihu.com">知乎</a>
+        </p>
+        <h2 style="background-color:blue">第二个标题</h2>
+        <p>
+            这是二级标题下面的段落<br>
+            <table border="1"><!--tr表示行，td表示列-->
+                <tr>
+                    <td>1</td><td>2</td>
+                </tr>
+            </table>
+        </p>
+        <h3 style="background-color:blueviolet">第三个标题</h3>
+        Hello html <br>
+        hai wang<br>
+        nanjing<br>
+        <font size='+3'>nanjing</font><br>
+        <font size='+7'>nanjing</font><br>
+        <p><font size='+9'>nanjing</font></p>
+        <p>TTTT</p>
+        <p><font size='+3'>你好</font></p>
+        <img src="1.jpg" width="200"/><br>
+        <a href="http://www.baidu.com">百度</a><br>
+        <a href="http://www.runoob.com">菜鸟教程</a><br>
+        <h1>乘法口诀表</h1>
+        <script type="text/javascript">
+            document.write("<table border='10'>");
+                for(var i=1;i<10;i++){//输出一行
+                    document.write("<tr>");//输出一行
+                    for(var j=1;j<=i;j++){//输出一列
+                        document.write("<td width='30'>"+i+"*"+j+"="+i*j+"</td>");
+                    }
+                    document.write("</tr>");
+                }
+            document.write("</table>");
+        </script>
+        <script>
+            document.write(Math.E+"<br>");
+            document.write(Math.sin(30)+"<br>");
+            document.write(Math.sqrt(92)+"<br>");
+            document.write(Math.random()+"<br>");
+            document.write(Math.round(4.3)+"<br>");
+        </script>
+    </body>
+</html>
