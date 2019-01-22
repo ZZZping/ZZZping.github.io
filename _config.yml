@@ -26,7 +26,6 @@ blog_button:
 # Navigation buttons in the front page.
 nav:
     - {title: Projects, description: My Projects, url: 'http://project.onevcat.com'}
-    #- {title: 知乎, description: 知乎, url: 'https://www.zhihu.com'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
