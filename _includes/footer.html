@@ -3,5 +3,32 @@
     	<span class="footer__copyright">本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a></span>
         <span class="footer__copyright">由 <a href="https://jekyllrb.com">Jekyll</a> 于 {{ site.time | date: "%F" }} 生成，感谢 <a href="https://www.digitalocean.com/?refcode=30ed2d146762">Digital Ocean</a> 为本站提供稳定的 VPS 服务</span>
         <span class="footer__copyright">本站{% if site.creator %}由 {{site.creator}} 创建，{% endif %}采用 <a href="https://github.com/onevcat/vno-jekyll">Vno - Jekyll</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/onevcat/OneV-s-Den">本站源码</a> - &copy; {{site.time | date: "%Y"}}</span>
+        <script type="text/javascript">
+            /*7Core-CN - 网页鼠标点击特效（爱心）*/
+            !function (e, t, a) {
+                function r() {
+                    for (var e = 0; e < s.length; e++)
+                        s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
+                        requestAnimationFrame(r)
+                    }
+                    function n() {
+                        var t = "function" == typeof e.onclick && e.onclick;e.onclick = function (e) {
+                            t && t(), o(e)}}function o(e) {
+                                var a = t.createElement("div");a.className = "heart", s.push({
+                                    el: a,x: e.clientX - 5,y: e.clientY - 5,scale: 1,alpha: 1,color: c()
+                                }), 
+                            t.body.appendChild(a)}function i(e) {
+                                var a = t.createElement("style");a.type = "text/css";try {
+                                    a.appendChild(t.createTextNode(e)
+                                    )} 
+                                catch (t) {
+                                    a.styleSheet.cssText = e}t.getElementsByTagName("head")[0].appendChild(a)}function c() {
+                                        return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+                                    }
+                                    var s = [];e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {
+                                        setTimeout(e, 1e3 / 60)
+                                    }, 
+                                    i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()}(window, document);
+        </script>
     </footer>
 </section>
