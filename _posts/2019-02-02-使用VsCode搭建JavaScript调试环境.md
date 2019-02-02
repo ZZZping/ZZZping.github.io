@@ -19,7 +19,7 @@ date: 2019-02-02 23:25:24.000000000 +09:00
 + jQuery Code Snippets 
 
 ## 配置调试环境
-+ 在<font color=#0000FF>调试</font>中[没有配置]下拉选项中选择[添加配置]，此时VS code会自己打开[launch.json]文件
++ 在<font color=red>调试</font>中[没有配置]下拉选项中选择[添加配置]，此时VS code会自己打开[launch.json]文件
 ### 使用火狐调试
 在配置中添加
 ```
