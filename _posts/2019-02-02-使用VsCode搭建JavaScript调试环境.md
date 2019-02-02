@@ -19,7 +19,7 @@ date: 2019-02-02 23:25:24.000000000 +09:00
 + jQuery Code Snippets 
 
 ## 配置调试环境
-+ 在<font color=red>调试</font>中[没有配置]下拉选项中选择[添加配置]，此时VS code会自己打开[launch.json]文件
++ 在[调试]中[没有配置]下拉选项中选择[添加配置]，此时VS code会自己打开[launch.json]文件
 ### 使用火狐调试
 在配置中添加
 ```
@@ -44,3 +44,5 @@ date: 2019-02-02 23:25:24.000000000 +09:00
         }
 ```
 其中[hello.html]为需要调试的[.html]文件，每次需要修改。之后在调试中选择[Launch Chrome against localhost]即可。
+
+[VsCode-doc]: https://code.visualstudio.com/
