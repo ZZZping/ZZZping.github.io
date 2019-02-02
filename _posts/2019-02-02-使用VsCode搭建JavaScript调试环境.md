@@ -17,6 +17,7 @@ date: 2019-02-02 23:25:24.000000000 +09:00
 + HTML Snippets
 + JavaScript Snippet Pack
 + jQuery Code Snippets 
+
 ## 配置调试环境
 + 在[调试]中[没有配置]下拉选项中选择[添加配置]，此时VS code会自己打开[launch.json]文件
 ### 使用火狐调试
