@@ -8,4 +8,4 @@ date: 2019-02-02 23:25:24.000000000 +09:00
 
 ## 安装插件
 
-[VsCode-doc]
+[VsCode-doc]: https://code.visualstudio.com/
