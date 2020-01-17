@@ -4,8 +4,25 @@ title: Debain学习手册1-----安装sudo
 date: 2020-01-17 23:25:24.000000000 +09:00
 ---
 
-# 进入root模式
+## 进入root模式
 在terminal中输入
 ```
     su
 ```
+
+## 安装sudo
+在terminal中输入
+```
+    apt-get install sudo
+```
+如果出现下面的error
+```
+    E: Could not get lock /var/lib/dpkg/lock - open(11: Resource temporarily unavailable)
+    E: Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?
+```
+在terminal中输入
+```
+    rm /var/cache/apt/archives/lock
+    rm /var/lib/dpkg/lock
+```
+即可解决问题 :)
