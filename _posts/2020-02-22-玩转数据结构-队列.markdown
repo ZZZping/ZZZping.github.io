@@ -9,3 +9,11 @@ date: 2020-02-22 14:54:24.000000000 +09:00
 + 队列是一种线性结构
 + 队列是对数组子集进行操作
 + 队列只能从队尾添加元素，只能从队首取出元素（First In First Out）
+
+## 队列中的主要方法
++ Queue<E>
++ void enqueue(E)
++ E dequeue()
++ E getFront()
++ int getSize()
++ boolean isEmpty()
