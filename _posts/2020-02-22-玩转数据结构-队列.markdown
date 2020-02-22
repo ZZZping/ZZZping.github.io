@@ -11,9 +11,9 @@ date: 2020-02-22 14:54:24.000000000 +09:00
 + 队列只能从队尾添加元素，只能从队首取出元素（First In First Out）
 
 ## 队列中的主要方法
-+ Queue<E>
-+ void enqueue(E)
-+ E dequeue()
-+ E getFront()
-+ int getSize()
-+ boolean isEmpty()
++ **Interface Queue<E>**
++ void enqueue(E)   //入队
++ E dequeue()       //出队
++ E getFront()      //查看队首
++ int getSize()     //队列中元素
++ boolean isEmpty() //队列是否为空
