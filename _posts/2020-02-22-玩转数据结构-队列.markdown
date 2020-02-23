@@ -11,7 +11,7 @@ date: 2020-02-22 14:54:24.000000000 +09:00
 + 队列只能从队尾添加元素，只能从队首取出元素（First In First Out）
 
 ## 队列中的主要方法
-+ **Interface Queue&lt;E&gt;**
+1. **Interface Queue&lt;E&gt;**
 
 
 
@@ -29,7 +29,7 @@ date: 2020-02-22 14:54:24.000000000 +09:00
 + (tail + 1) % c
 
 ## 循环队列中的主要方法
-+ LoopQueue&lt;E&gt;
+1. LoopQueue&lt;E&gt;
 
 
 
