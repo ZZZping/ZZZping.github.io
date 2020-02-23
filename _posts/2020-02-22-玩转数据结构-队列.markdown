@@ -11,7 +11,10 @@ date: 2020-02-22 14:54:24.000000000 +09:00
 + 队列只能从队尾添加元素，只能从队首取出元素（First In First Out）
 
 ## 队列中的主要方法
-+ **Interface Queue<E>** <---------ArrayQueue<E>
++ **Interface Queue&ltE&gt**
+
+
+
 + void enqueue(E)   //入队
 + E dequeue()       //出队
 + E getFront()      //查看队首
@@ -23,4 +26,15 @@ date: 2020-02-22 14:54:24.000000000 +09:00
 + **front == tail**时队列为空
 + **(tail + 1) % c == front**时队列为满，c为数组长度
 + 将数组看成一个环
-+ (当前索引+1)%(数组长度)
++ (tail + 1) % c
+
+## 循环队列中的主要方法
++ LoopQueue&lt;E&gt;
+
+
+
++ void enqueue(E)
++ E dequeue()
++ E getFront()
++ int getSize()
++ boolean isEmpty()
