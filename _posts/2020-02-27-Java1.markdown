@@ -5,6 +5,8 @@ date: 2020-02-27 14:54:24.000000000 +09:00
 ---
 
 
+ <script type="text/javascript"
+       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 # 关键字
 ## 关键字特点：
    + 完全小写的字母
