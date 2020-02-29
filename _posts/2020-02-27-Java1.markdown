@@ -39,15 +39,15 @@ date: 2020-02-27 14:54:24.000000000 +09:00
    + 整数型
       + byte 1byte -128~127
       + short 2byte -32687~32767
-      + int 4byte -2^31~2^31-1
+      + int 4byte $-2^31$~$2^31-1$
       + long 8byte -2^63~2^63-1
    + 浮点型
-      + float 4字节
-      + double 8字节
+      + float 4byte
+      + double 8byte
    + 字符型
-      + char 2字节
+      + char 2byte
    + 布尔型
-      + boolean 1字节
+      + boolean 1byte
 
 ### Tips
    1. 字符串不是基本类型，是引用类型
