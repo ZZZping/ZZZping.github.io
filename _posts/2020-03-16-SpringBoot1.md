@@ -6,7 +6,12 @@ date: 2020-03-16 16:28:24.000000000 +09:00
 
 # Spring Boot
 
-## SpringBoot简介
+## SpringBoot配置
+   1. 创建maven工程
+   2. 添加SpringBoot的起步依赖
+   3. 编写SpringBoot引导类
+   4. 编写control
+   5. 测试
 
 ## SpringBoot原理
 
