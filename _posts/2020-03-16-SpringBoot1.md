@@ -15,6 +15,9 @@ date: 2020-03-16 16:28:24.000000000 +09:00
    + idea不支持自动编译，所以在进行springboot热部署时会失败
 
 ## SpringBoot原理
+   1. springboot以功能为单位
+   2. 
+   3. 
 
 ## SpringBoot配置文件
 
