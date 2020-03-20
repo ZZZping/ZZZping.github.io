@@ -30,7 +30,8 @@ date: 2020-03-16 16:28:24.000000000 +09:00
       1. 包括了SpringBootConfiguration的功能
       2. 可以自动配置
       3. 主键扫描ComponentScan
-   
+      4. EnableAutoConfiguration:自动配置
+         + import：当前注解下，引用其他注解类
 
 ## SpringBoot配置文件
 
