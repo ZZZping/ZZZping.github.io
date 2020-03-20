@@ -16,8 +16,21 @@ date: 2020-03-16 16:28:24.000000000 +09:00
 
 ## SpringBoot原理
    1. springboot以功能为单位
-   2. 
-   3. 
+   2. springboot中pom.xml中
+      ```
+            <parent></parent>
+      ```
+   的作用是进行相应的版本控制
+   3. springboot中web功能起步依赖的作用是在起步依赖中配置所用到的功能,配置引导类
+   4. springboot中注解
+      ```
+         @SpringBootApplication
+      ```
+   的作用是
+      1. 包括了SpringBootConfiguration的功能
+      2. 可以自动配置
+      3. 主键扫描ComponentScan
+   
 
 ## SpringBoot配置文件
 
