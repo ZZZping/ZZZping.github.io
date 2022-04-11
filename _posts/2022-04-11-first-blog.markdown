@@ -18,4 +18,4 @@ int main(int argc, char** argv) {
 
 ## Add images
 
-![three]({{"../../../assets/20220411001.jpg" | relative_url}})
+![three]({{"/assets/20220411001.jpg" | relative_url}})
