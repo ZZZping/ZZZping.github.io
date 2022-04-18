@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Write my first blog post"
-date: "2022-04-11"
+date: 2022-04-11
 categories: jekyll blogging
 featured_image: featured-image.jpg
 ---
