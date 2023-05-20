@@ -13,3 +13,9 @@ bundle exec jekyll serve
 ````
 bundel exec jekyll serve --livereload
 ````
+每次修改文件后，无比上传到`github`，使用下列命令
+````gitexclude
+git add .
+git commit -m ""
+git push origin master
+````
