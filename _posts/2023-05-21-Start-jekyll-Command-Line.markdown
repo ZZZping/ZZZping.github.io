@@ -1,0 +1,15 @@
+---
+layout: post
+title: "在命令行中启动`jekyll`框架"
+date: 2023-05-21
+categories: jekyll blogging
+---
+
+在命令行中启动`jekyll`框架可以使用以下的命令
+````
+bundle exec jekyll serve
+````
+如果想使`jekyll`服务器运行时启动`LiveReload`功能，即在编辑内容时，可以立即看到更改的效果，可以在上面的命令后面加上`--livereload`命令。
+````
+bundel exec jekyll serve --livereload
+````
