@@ -19,3 +19,8 @@ git add .
 git commit -m ""
 git push origin master
 ````
+处理`jekyll`启动后报警告
+`GitHub Metadata: No GitHub API authentication
+could be found. Some fields may be missing or have
+incorrect data.`的问题
+

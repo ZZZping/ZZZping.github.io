@@ -26,6 +26,7 @@ baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://zzzping.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username: ZZZping
+github_token: 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
 
 permalink: /:collection/:year-:month-:day-:title:output_ext
 show_excerpts: true
@@ -34,6 +35,7 @@ show_excerpts: true
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-github-metadata
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
