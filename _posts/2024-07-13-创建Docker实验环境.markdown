@@ -1,0 +1,62 @@
+---
+layout: post
+title: 创建Docker实验环境
+date: 2024-07-13
+categories: jekyll blogging
+---
+
+## 创建南京大学jyy老师[操作系统](https://jyywiki.cn/OS/2024/)实验环境
+在ubuntu(wsl或者虚拟机皆可)系统上创建相对应的[实验环境](https://jyywiki.cn/OS/2024/labs/Labs.md)；默认机器上已经安装了Docker。
+### 创建根目录文件夹存放Dockerfile和相关文件
+这个文件夹用来存放Dockerfile和要用到的相关文件
+````dash
+mkdir my_experiment # 创建my_experiment文件夹
+cd my_experiment
+````
+
+### 创建Dockerfile
+首先需要创建一个[Dockerfile](https://docs.docker.com/reference/dockerfile/)，Dockerfile
+是一个文本文档， 其中包含用户在命令行上调用的所有命令，用于创建镜像；Docker可以直接根据Dockerfile中的
+指令自动构建镜像。
+```dash
+vim Dockerfile
+```
+在创建好的Dockerfile中添加下面的指令；
+```dockerfile
+FROM ubuntu:22.04
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update
+RUN apt-get install -y build-essential gcc-multilib qemu-system strace gdb sudo python3 libsdl2-dev libreadline-dev
+RUN apt-get upgrade -y
+```
+
+### 创建docker镜像
+使用Docker CLI创建Docker镜像
+```dash
+docker build -t my_experiment_image .
+```
+在创建Docker镜像时，很容易遇到一些.....坑，比如网络问题=_=，我在解决网络问题时，使用了一些镜像加速，下面是创建镜像加速配置文件的步骤；
+```dash
+# 创建配置文件
+sudo vim /etc/docker/daemon.json
+```
+在创建好的配置文件中添加相应的镜像加速配置
+```json
+{
+  "registry-mirrors": ["https://docker.mirrors.sjtug.sjtu.edu.cn"]
+}
+```
+在创建好上面的配置文件后，需要重新加载一下配置并且重启一下Docker，使用下面的dash指令可以完成相应的操作；
+```dash
+sudo systemctl daemon-reload    # 重新加载配置文件
+sudo systemctl restart docker   # 重启Docker
+```
+在解决完网络问题后，重新创建一下Docker镜像即可。
+
+### 启动Docker镜像
+使用创建好的镜像(my_experiment_image)运行一个[容器](https://docs.docker.com/guides/docker-concepts/the-basics/what-is-a-container/)；
+```dash
+docker run -it my_experiment_image
+```
+
+至此实验环境搭建完成，可以开始咯 :P
