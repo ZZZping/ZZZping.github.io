@@ -11,8 +11,15 @@ bundle exec jekyll serve
 ````
 如果想使`jekyll`服务器运行时启动`LiveReload`功能，即在编辑内容时，可以立即看到更改的效果，可以在上面的命令后面加上`--livereload`命令。
 ````
-bundel exec jekyll serve --livereload
+bundle exec jekyll serve --livereload
 ````
+## 启动时报错
+````js
+Liquid Exception: undefined method `tainted?' for "/assets/20220411001.jpg":
+````
+修改``Liquid``版本到``4.0.4``
+
+
 每次修改文件后，无比上传到`github`，使用下列命令
 ````gitexclude
 git add .
