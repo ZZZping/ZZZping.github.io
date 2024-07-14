@@ -58,5 +58,17 @@ sudo systemctl restart docker   # 重启Docker
 ```dash
 docker run -it my_experiment_image
 ```
-
+`-it`操作是操作`-i`和操作`-t`的组合，`-i` 选项使容器保持标准输入`STDIN`打开；`-t`操作表示分配一个伪终端`pseudo-TTY`给容器 \
 至此实验环境搭建完成，可以开始咯 :P
+
+在首次创建并且启动Docker container后，我们可以使用`Ctrl + D`退出当前container，如果下次想进入相同的container，可以直接通过`container id`
+进入同一个container；
+```dash
+# 查看所有container id
+docker ps -a
+# 假设我们创建的container id为1234565
+## 启动之前创建的container
+docker start <container id> # 将<container id>替换为自己创建的container id => docker start 1234565
+## 进入container的交互式shell
+docker exec -it <container id> /bin/bash # 将<container id>替换为自己的id，docker exec -it 123456 /bin/bash
+```
